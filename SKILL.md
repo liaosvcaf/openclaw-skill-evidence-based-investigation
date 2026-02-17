@@ -216,3 +216,13 @@ Technical "why web_fetch failed" is irrelevant - the decision to use it was wron
 - Update investigation skill to check decision points first
 - Update skill-engineer to validate tool choice against input type
 - Add pre-execution validation (URL extension → tool mapping)
+
+## Configuration
+
+This skill has no external service dependencies. It operates purely on local log files and system state.
+
+The agent needs the following paths from **TOOLS.md** or local context:
+- `$LOG_DIR` — Directory where OpenClaw gateway logs are stored (e.g., `~/.openclaw/logs/`)
+- `$SESSIONS_DIR` — Directory where session JSONL files are stored (e.g., `~/.openclaw/agents/{agent}/sessions/`)
+
+No API keys or credentials required.
