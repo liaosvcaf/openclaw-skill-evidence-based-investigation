@@ -1,0 +1,9 @@
+{
+  "skill": "evidence-based-investigation",
+  "stage": "competitive",
+  "competitivePosition": "ahead",
+  "competitiveAction": "maintain",
+  "auditDate": "2026-02-17",
+  "auditBatch": "comp-generic-b2",
+  "notes": "OpenClaw-specific investigation methodology with no direct ClawHub competitors. Enterprise RCA tools (Algomox, Datagrid) target wrong domain. Key differentiators: decision-point analysis framework (novel), OpenClaw JSONL log patterns, evidence citation discipline. Synergistic with sess-diagnoser, sess-fixer, health-check portfolio. Recommend maintain with pattern additions as OpenClaw evolves."
+}
