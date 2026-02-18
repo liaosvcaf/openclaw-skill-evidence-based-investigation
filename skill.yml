@@ -1,6 +1,7 @@
 name: evidence-based-investigation
+display_name: "Evidence-Based Investigation"
 description: "Investigate problems using evidence-based analysis with session logs, error logs, and 5 Whys methodology. Use when debugging OpenClaw issues, analyzing system failures, tracing message delivery problems, or conducting root cause analysis that requires hard evidence from logs, files, or system state rather than assumptions."
-version: 1.0.0
+version: 1.1.0
 triggers:
   - investigate
   - debug

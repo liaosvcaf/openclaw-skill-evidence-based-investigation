@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0] - 2026-02-17
+### Added
+- `display_name` field to skill.yml
+- Agent owner declaration (## Agent Owner)
+- Explicit output format declaration
+- Measurable success criteria (## Success Criteria)
+- Related skills boundary documentation (sess-diagnoser vs this skill)
+
 ## v1.0.0 — 2026-02-16
 
 Initial release of evidence-based-investigation skill.

@@ -123,6 +123,8 @@ Structure findings clearly:
 
 ### 5. Report Issues
 
+Default output: markdown investigation report written to `investigation-{timestamp}.md` in the working directory, or delivered inline if no file path is available. User may request JSON format.
+
 See [issue-reporting.md](references/issue-reporting.md) for templates.
 
 Include:
@@ -226,3 +228,23 @@ The agent needs the following paths from **TOOLS.md** or local context:
 - `$SESSIONS_DIR` — Directory where session JSONL files are stored (e.g., `~/.openclaw/agents/{agent}/sessions/`)
 
 No API keys or credentials required.
+
+## Agent Owner
+
+This skill is executed by the main OpenClaw agent session. No sub-agents are spawned.
+Investigation runs in a single session using evidence from logs, files, and system state.
+
+## Success Criteria
+
+An investigation succeeds when:
+1. Root cause is identified with at least one direct evidence citation (log line, file content, or system state)
+2. All hypotheses are explicitly confirmed or ruled out with evidence
+3. Recommendations are specific and actionable (not generic advice)
+4. Investigation report is written and delivered
+
+## Related Skills
+
+- **sess-diagnoser**: Use for diagnosing active OpenClaw session failures (configuration, routing, agent loops).
+  Use `evidence-based-investigation` when you need systematic root cause analysis with log evidence across any system component.
+- **Boundary**: If the problem is "my session is broken", use sess-diagnoser.
+  If the problem is "something happened and I need to understand why", use evidence-based-investigation.
